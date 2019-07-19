@@ -1,0 +1,154 @@
+html {
+  padding-bottom: 2rem;
+}
+
+.App {
+  text-align: center;
+}
+
+button.navbar-toggler{
+  display: none;
+}
+
+.asidenoborder{
+  padding-top: 1em;
+  margin-top: 1em;
+}
+
+.aside-with-border {
+  padding-top: 1em;
+  margin-top: 1em;
+  border-left: thick solid #343a40;
+  border-top: 0;
+}
+
+.text-lightblue {
+  color: #0088cf !important;
+}
+
+.text-lightgray {
+  color: #a0a0a0 !important;
+}
+
+.text-gray {
+  color: #616161 !important;
+}
+
+.bg-white {
+  background: white;
+}
+
+.a-nav {
+  color: white;
+}
+
+.header-train-badge {
+  font-weight: bold;
+  border: 1px solid;
+  background: white;
+  font-size: 1em;
+  margin-left: 0.2em;
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 51px;
+  height: 51px;
+  margin: 6px;
+  border: 6px solid black;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: black transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.list-gare a {
+  color: #788288;
+  text-decoration: none;
+}
+.list-gare li {
+  position: relative;
+}
+.list-gare li span {
+  display: inline-block;
+  font-weight: 800;
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  line-height: 1em;
+  border-radius: 1em;
+  background: #6c757d;
+  color: white;
+  position: relative;
+}
+.list-gare li::before {
+  content: "";
+  position: absolute;
+  background: #6c757d;
+  z-index: -1;
+}
+.list-gare.horizontal li {
+  display: inline-block;
+}
+.list-gare.horizontal li span {
+  margin: 0 1em;
+}
+.list-gare.horizontal li::before {
+  top: 0.9em;
+  left: -25px;
+  width: 4em;
+  height: 0.2em;
+}
+.list-gare.vertical {
+  padding: 0;
+  margin: 0;
+}
+.list-gare.vertical li {
+  list-style-type: none;
+  text-align: left;
+}
+.list-gare.vertical li span {
+  margin: 1.4em 0;
+}
+.list-gare.vertical li::before {
+  top: -35px;
+  left: 0.43em;
+  width: 0.2em;
+  height: 4em;
+}
+.list-gare li:first-child::before {
+  display: none;
+}
+.list-gare .active {
+  background: dodgerblue;
+}
+.list-gare .active ~ li {
+  background: lightblue;
+}
+.list-gare .active ~ li::before {
+  background: lightblue;
+}
